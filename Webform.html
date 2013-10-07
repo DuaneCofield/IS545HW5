@@ -2,45 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Duane Cofield</title>
-    <style>
-        fieldset {
-            width: 50%;
-           margin-left:300px;
-
-        }
-         p{
-            text-align: left;
-            text-indent: 300px;
-          
-        }
-          p {
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            text-align: center;
-        }
-        h2 {
-            text-align: left;
-            text-indent: 300px;
-        }
-        h3 {
-            text-align: left;
-            text-indent: 300px;
-        }
-        
-    </style>
-</head>
+    <link rel="StyleSheet" type="text/css" href="StyleSheet.css" />    
+    </head>
 <body>
     <header>
-    <h1>Cofield, Duane Homework 2</h1>
+    <h1>Cofield, Duane Homework 3</h1>
     <hr color=Green Size=8 width="50%" align=center />
-        <nav>
-    <p><a href="index2.html">Home</a> <a href="Webform.html">Webform Demo</a> <a href="index.html">About Me</a></p>
+         <nav>
+    <ul><li><a href="index2.html">Home</a></li> 
+        <li><a href="Webform.html">Webform Demo</a></li>
+        <li> <a href="index.html">About Me</a>
+            </li>
+    </ul>
         </nav>
     </header>
-        <h2>Welcome to my  Web Form</h2>
-    <h3>A demo form for hotel room reseration</h3>
+    <div class="form">
+        <h2>Welcome to my  Web Form </h2>
+    <p class="demo">A demo form for hotel room reservation</p>
 
     <form action="mailto: cofieldd@gmail.com">
         <fieldset>
@@ -126,23 +104,34 @@
             <input type="text" name="Promo code" size="15" maxlength="4" />
             <br />
             <label>Special Note</label>
+           
             <textarea name="comments" placeholder="Enter Your special note here..."  cols="40" rows="5"></textarea>
+            <div class="submit">
+            <input type="Reset" value="Clear Form" name="Clear Form"></input> <input type="submit" value="Request Reservation" name="Request Reservation" /></input>
+            </div>
+    </form>
         </fieldset>
-        <p>
-        <input type="Reset" value="Clear Form" name="Clear Form"></input> <input type="submit" value="Request Reservation" name="Request Reservation" /></input>
-            </p>
+        </div>
+        
     </form>
     <br />
-    <footer>
+   
+      <footer>
      <contact>
-         
-        <p>Contact Information</p>
-         <p><a href ="mailto:cofieldd@gmail.com">
-            cofieldd@gmail.com
-           </a></p>
-         <p>
-        <em>Phone: (310) 703-7839</em></p>
+         <table>
+         <tr>
+        <td>Duane Cofield&copy Contact Information</td>
+         <td><a href ="mailto:cofieldd@gmail.com">
+             <address>
+           E-Mail cofieldd@gmail.com
+           </a></td>
+         <td>
+        <em>Phone: (310) 703-7839</em></td>
+             </tr>
+         </table>
+         </address>
     </contact>
         </footer>
+       
 </body>
 </html>
